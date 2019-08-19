@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'docker.repo.io/maven-jdk8:3.6.1'
+            image 'docker.repo.io/mvn-jdk8:3.6.1'
             args '-v ${env.HOME}/.m2:/home/maven/.m2'
         }
     }
